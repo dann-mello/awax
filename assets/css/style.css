@@ -244,11 +244,138 @@ section.default.dark .section-body {
 
 .section-aboutUs .section-aboutUs--right {
     width: 500px;
-    
+
     text-align: center;
 }
 
-.section-aboutUs .section-aboutUs--right img{
+.section-aboutUs .section-aboutUs--right img {
     width: 480px;
     box-shadow: 0px 5px 10px #333;
+}
+
+.section-services {
+    display: flex;
+    align-items: center;
+}
+
+.section-services .section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #999;
+    padding: 20px;
+}
+
+.section-services .section-service:first-child {
+    border-left: 1px solid #999;
+}
+
+.section-services .section-service h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.section-services .section-service p {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters {
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #ededed;
+    border-radius: 25px;
+    padding: 0px 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 13px;
+    text-transform: uppercase;
+    border-right: 1px solid #ccc;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #555;
+    transition: ease .3s;
+}
+
+.section-projects--filters li:last-child {
+    border: none;
+}
+
+.section-projects--filters li.active,
+.section-projects--filters li:hover {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects--photoarea {
+    width: 260px;
+    height: 160px;
+    /*Diminiui 20 do .section-projects--photo */
+    margin: 10px;
+    cursor: pointer;
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    display: none;
+}
+
+.section-projects--photoinfo h5{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-projects--photoinfo  p{
+    font-size: 0.7rem;
+    word-wrap: break-word;
+    text-align: center;
+    color: #ccc;
+    line-height: 18px;
+    
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
 }
