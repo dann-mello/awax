@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-header{
+body {
+    overflow-x: hidden;
+}
+
+header {
     height: 100px;
     background-color: #000;
     color: #fff;
 }
 
-.header{
+.header {
     max-width: 1140px;
     height: 100px;
     margin: auto;
@@ -21,28 +25,28 @@ header{
     align-items: center;
 }
 
-.logo a{
+.logo a {
     width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-.logo img{
+.logo img {
     width: 100%;
 }
 
-.menu{
+.menu {
     flex: 1;
     display: flex;
     justify-content: end;
 }
 
-.menu nav ul{
+.menu nav ul {
     display: flex;
 }
 
-.menu nav ul, 
+.menu nav ul,
 .menu nav ul li {
     list-style: none;
     height: 100px;
@@ -63,12 +67,12 @@ header{
 }
 
 .menu nav ul li.active,
-.menu nav ul li a:hover{
+.menu nav ul li a:hover {
     border-bottom: 5px solid #b28756;
     color: #7a7a7a;
 }
 
-section.banner{
+section.banner {
     background-color: #000;
     height: calc(100vh - 100px);
     background-image: url('../images/complementos/bg.jpg');
@@ -83,7 +87,7 @@ section.banner .sliders {
     display: flex;
 }
 
-section.banner .slide{
+section.banner .slide {
     width: 100vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -99,25 +103,25 @@ section.banner .slidearea {
     text-align: center;
 }
 
-section.banner .slidearea h1{
+section.banner .slidearea h1 {
     font-size: 4rem;
 }
 
-section.banner .slidearea h2{
+section.banner .slidearea h2 {
     margin-top: 15px;
 }
 
 section.banner .slidearea h1,
-section.banner .slidearea h2{
+section.banner .slidearea h2 {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-section.banner .slidearea span{
+section.banner .slidearea span {
     color: #b28756;
 }
 
-section.banner .slidearea a{
+section.banner .slidearea a {
     display: block;
     padding: 10px 30px;
     background-color: #b28756;
@@ -134,7 +138,7 @@ section.banner .slidearea a:hover {
     box-shadow: 0px 0px 2px #b9b9b9;
 }
 
-section.banner .sliders-pointers{
+section.banner .sliders-pointers {
     width: 100vw;
     height: 20px;
     position: absolute;
@@ -144,7 +148,7 @@ section.banner .sliders-pointers{
     justify-content: center;
 }
 
-section.banner .sliders-pointers .pointer{
+section.banner .sliders-pointers .pointer {
     width: 15px;
     height: 15px;
     border: 2px solid #b28756;
@@ -152,7 +156,99 @@ section.banner .sliders-pointers .pointer{
     margin: 5px;
     cursor: pointer;
 }
+
 section.banner .sliders-pointers .pointer.active,
-section.banner .sliders-pointers .pointer:hover{
+section.banner .sliders-pointers .pointer:hover {
     background-color: #b28756;
+}
+
+section.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.default .section-title,
+section.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.default .section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+section.default .section-desc {
+    font-size: 0.5rem;
+    color: #ccc;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+section.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+    min-height: 100px;
+}
+
+section.default.light {
+    background-color: #f7f7f7;
+}
+
+section.default.light .section-title,
+section.default.light .section-body {
+    color: #000;
+}
+
+section.default.dark {
+    background-color: #000;
+}
+
+section.default.dark .section-title,
+section.default.dark .section-body {
+    color: #fff;
+}
+
+
+
+/*CSS de áreas específicas*/
+
+.section-aboutUs {
+    display: flex;
+}
+
+.section-aboutUs .section-aboutUs--left {
+    flex: 1;
+}
+
+.section-aboutUs .section-aboutUs--left p {
+    line-height: 25px;
+}
+
+.section-aboutUs .section-aboutUs--left a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #b28756;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.section-aboutUs .section-aboutUs--left a:hover {
+    color: #f0f0f0;
+    box-shadow: 0px 0px 2px #b9b9b9;
+}
+
+.section-aboutUs .section-aboutUs--right {
+    width: 500px;
+    
+    text-align: center;
+}
+
+.section-aboutUs .section-aboutUs--right img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
 }
