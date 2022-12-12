@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -20,9 +21,11 @@ header{
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img{
@@ -33,4 +36,30 @@ header{
     flex: 1;
     display: flex;
     justify-content: end;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul,
+.menu nav ul li{
+    list-style: none;
+}
+
+.menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid transparent;
+}
+
+.menu nav ul li a:hover{
+    border-bottom: 5px solid #b28756;
 }
