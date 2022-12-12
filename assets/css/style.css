@@ -77,25 +77,26 @@ section.banner{
     overflow: hidden;
 }
 
-section.banner .sliders{
+section.banner .sliders {
     width: 1000vw;
     height: 100%;
+    display: flex;
 }
 
 section.banner .slide{
     width: 100vw;
     height: 100%;
-    display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-section.banner .slidearea{
+section.banner .slidearea {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #fff;
     height: 100%;
+    text-align: center;
 }
 
 section.banner .slidearea h1{
