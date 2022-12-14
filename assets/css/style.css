@@ -942,3 +942,52 @@ input.textarea{
     color: #f0f0f0;
     box-shadow: 0px 0px 2px #b9b9b9;   
 }
+
+section.map {
+    height: 415px;
+    position: relative;
+    
+}
+
+.section-contact-map {
+    width: 540px;
+    height: 340px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    margin-top: 45px;
+    margin-left: 150px;
+}
+
+.section-contact-map--contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding: 50px;
+}
+
+.section-contact-map--contact {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.section-contact-map--contact-img{
+    background-color: #aeaeae;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.section-contact-map--contact-img img {
+    width: 60%;
+}
+
+.section-contact-map--contact p{
+    color: #7f7f7f;
+    font-size: 0.8rem;
+}
